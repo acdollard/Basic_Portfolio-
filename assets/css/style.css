@@ -1,11 +1,22 @@
 body {
     background: url(../../assets/images/cheap_diagonal_fabric.png)
 }
+*{margin: 0;  }
 
-.wrapper {
-    width: 960px; 
-    margin: 0 auto; 
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff; 
+    height: 55px;
+    
+    
+
 }
+
+
 
 .nameBox{
     background-color: #4aaaa5;
@@ -13,6 +24,9 @@ body {
     float: left; 
     color: #ffffff;
     text-align:center; 
+    height: 40px;
+    margin-left: 150px; 
+    padding: 10px 20px 5px 20px; 
 }
 
 ul {
@@ -21,10 +35,12 @@ ul {
     padding: 0;
     overflow: none; 
     background-color: #ffffff;
+    margin-right: 150px; 
 }
 
 li {
     float: right;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 li a {
@@ -33,19 +49,19 @@ li a {
     text-align: center; 
     padding: 14px 16px; 
     text-decoration: none; 
+    height: 31px;
 }
  li a:hover {
      background-color: #dad7d7
  }
 
-.header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: #ffffff; 
+
+
+.clearfix::after{
+    content: "";
+    clear: both;
+     
 }
-
-
 
 h2 h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -57,7 +73,7 @@ p {
 
 img {
     float: left;
-    margin: 10px;
+    margin:10px 20px 10px 10px;
 }
 
 
@@ -73,22 +89,25 @@ img {
 }
 
 .content{
+    width: 960px; 
     background-color:#ffffff;
     display: block;
     clear: both; 
     height:60%;
     margin: 0 auto; 
-    margin-top: 25px; 
-    padding: 5px;
-    
+    margin-top: 70px; 
+    padding: 20px;
+    padding-left: 20px;
     overflow: scroll;
 }
 
 .section_title {
     display: block;
-    padding: 10px, 20px, 10px, 20px; 
+    padding: 10px, 20px, 10px, 40px; 
     color: #4aaaa5; 
     margin-left: 20px; 
+    margin-bottom: 10px; 
+    border-bottom-color: #777777;
 }
 
 .portfolio_item {
@@ -96,7 +115,6 @@ img {
     height: 100px;
     width: 200px;
     position: relative; 
-     
     margin: 0 auto; 
     float: left; 
     padding: 30px;
